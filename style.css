@@ -1,73 +1,69 @@
-/* Arquivo: entrega2/css/style.css */
-/* 6+ seletores: element, class, id, descendant, attribute, pseudo-class */
 
-/* Element selector */
 body {
   font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-  background-color: #eef2f6; /* corpo com cor diferente de branco */
-  width: 60%; /* requisito: ocupar 60% */
-  margin: 0 auto; /* centralizar */
-  padding: 2% 0; /* requisito */
-  line-height: 1.5; /* espaçamento entre linhas */
+  background-color: #eef2f6;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2% 0;
+  line-height: 1.5;
 }
 
-/* Class selector: container principal com fundo branco e bordas arredondadas */
+
 .container {
-  background-color: #ffffff; /* parte principal branca */
-  border: 1px solid #d8dbe0; /* border alterada */
-  border-radius: 10px; /* cantos arredondados */
-  padding: 20px; /* padding alterado */
+  background-color: #ffffff;
+  border: 1px solid #d8dbe0;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-/* ID selector */
+
 #top-navigation {
   margin-bottom: 16px;
 }
 
-/* nav estilizado e com display inline-block (requisito) */
+
 nav {
-  display: inline-block; /* obrigatório */
+  display: inline-block;
 }
 
-/* Descendant selector: links dentro do nav */
+
 nav a {
   margin-right: 12px;
-  color: #1a73e8; /* cor dos títulos também segue essa família */
+  color: #1a73e8;
   text-decoration: none;
 }
 
-/* Pseudo-class selector: hover */
+
 nav a:hover {
   text-decoration: underline;
 }
 
-/* Element group selector: todos os títulos com a mesma cor (não-preta) */
+
 h1, h2, h3 {
-  color: #1a73e8; /* mesmo tom para todos os títulos */
+  color: #1a73e8;
 }
 
-/* Attribute selector: links que abrem em nova aba */
+
 a[target="_blank"] {
   font-weight: 600;
 }
 
-/* Classe para avatar usando float (não usar flexbox) */
 .avatar {
-  float: left; /* uso de float conforme permitido */
+  float: left;
   width: 140px;
   height: 140px;
   object-fit: cover;
-  margin-right: 16px; /* margin alterada */
-  border: 1px solid #cfcfcf; /* border alterada */
+  margin-right: 16px;
+  border: 1px solid #cfcfcf;
   border-radius: 8px;
 }
 
-/* Limpar float no container principal (uso de overflow) */
+
 .main-content {
-  overflow: auto; /* uma das propriedades exigidas */
+  overflow: auto;
 }
 
-/* Lista de competências */
+
 .skills ul {
   padding-left: 20px;
 }
@@ -78,7 +74,7 @@ a[target="_blank"] {
   margin-right: 8px;
 }
 
-/* Tabela de experiências */
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -95,14 +91,14 @@ th, td {
   border: 1px solid #ddd;
 }
 
-/* Formulário */
+
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form textarea {
   width: 100%;
   padding: 8px;
-  margin: 6px 0 12px 0; /* margin alterada em inputs */
+  margin: 6px 0 12px 0;
   box-sizing: border-box;
 }
 
@@ -111,7 +107,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* Utilitário: link de retorno */
+
 .back-link {
   display: inline-block;
   margin-top: 12px;
